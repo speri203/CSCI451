@@ -17,7 +17,6 @@ int main() {
     printf("CHILD: Process ID: %d\n", (int)getpid());
     system("xclock");
     execv(Command, NULL);
-    main();
     exit(0);
   }
 
@@ -25,6 +24,7 @@ int main() {
     Below this block is parent or pid_t > 1 case
   */
   printf("PARENT: Process ID: %d\n", (int)getpid());
-  wait(NULL); // Requesting child process to be complete
+  //wait(NULL); // Requesting child process to be complete
+  main();
   return 0;
 }
