@@ -1,3 +1,9 @@
+/*
+  Author: Sai Peri
+  Assignment 2
+  8/30/20218
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
